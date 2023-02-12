@@ -19,7 +19,7 @@ export const ContactList = ({ contacts, onDeleteContact }) => {
 };
 
 ContactList.propTypes = {
-  name: PropTypes.string.isRequired,
-  number: PropTypes.number.isRequired,
-  id: PropTypes.string.isRequired,
+  name: PropTypes.string,
+  number: PropTypes.number,
+  id: PropTypes.string,
 };
