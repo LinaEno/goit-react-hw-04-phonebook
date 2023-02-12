@@ -28,8 +28,7 @@ export function App() {
       id: nanoid(10),
       ...newContact,
     };
-
-    setContacts([contact, ...contacts]);
+    setContacts(prevContacts => [contact, ...prevContacts]);
   };
 
   const changeFilter = event => {
